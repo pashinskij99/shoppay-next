@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 import { IoLocationSharp } from "react-icons/io5";
 import Link from "next/link";
 
-const Copyright = ({country = {}}) => {
+const Copyright = ({country}) => {
     return (
         <div className={styles.footer__copyright}>
             <section>©2022 SHOPPAY All Rights Resereved.</section>
