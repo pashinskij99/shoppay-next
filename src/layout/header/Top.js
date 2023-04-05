@@ -7,7 +7,7 @@ import Link from "next/link";
 import {useState} from "react";
 import UserMenu from "@/layout/header/UserMenu";
 
-const Top = () => {
+const Top = ({country}) => {
     const [loggedIn, setLoggedIn] = useState(false)
     const [visible, setVisible] = useState(false)
     return (
@@ -19,10 +19,10 @@ const Top = () => {
                         <Image
                             width={15}
                             height={15}
-                            src="/images/UA.png"
-                            alt="UKR"
+                            src={country.flag}
+                            alt={country.name}
                         />
-                        <span>Ukraine / usd</span>
+                        <span>{country.name} / usd</span>
                     </li>
                     <li>
                         <MdSecurity/>
